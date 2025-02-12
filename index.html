@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes borderAnimation {
+            0% { border-color: red; }
+            25% { border-color: blue; }
+            50% { border-color: green; }
+            75% { border-color: yellow; }
+            100% { border-color: red; }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            border: 3px solid red;
+            animation: borderAnimation 3s infinite;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            border: 3px solid red;
+            animation: borderAnimation 3s infinite;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid red;
+            margin-bottom: 10px;
+            animation: borderAnimation 3s infinite;
+        }
+        .info h2 {
+            margin: 5px 0;
+            font-size: 20px;
+            color: #007bff;
+            text-align: center;
+        }
+        .info p {
+            margin: 3px 0;
+            color: #555;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Biodata</h1>
+        <div class="card">
+            <img src="img/radhit.jpg" alt="Foto Siswa" class="profile-img">
+            <div class="info">
+                <h2>Nama: Muhammad Radhitya Pranata</h2>
+                <p>Absen: 13</p>
+                <p>Kelas: XII RPL B</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
